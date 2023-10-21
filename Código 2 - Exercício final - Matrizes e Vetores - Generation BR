@@ -1,0 +1,35 @@
+Algoritmo VetorNumeros
+    tamanho <- 10
+
+    número <- []
+
+    Para i de 1 até tamanho faça
+        Escreva("Digite o ", i, "º número inteiro: ")
+        Leia(numero)
+        Adicione numero ao final de vetor
+    soma <- 0
+    cont_pares <- 0
+
+    numeros_pares <- []
+
+    Para i de 1 até tamanho faça
+        soma <- soma + [i]
+        Se [i] % 2 = 0 então
+            cont_pares <- cont_pares + 1
+            Adicione [i] ao final de numeros_pares
+        FimSe
+    FimPara
+
+    media <- soma / tamanho
+
+    Escreva("Elementos nos índices ímpares do vetor:")
+    Para i de 2 até tamanho passo 2 faça
+        Escreva([i])
+    FimPara
+
+    Escreva("Elementos pares do vetor:")
+    Escreva(numeros_pares)
+
+    Escreva("Soma de todos os elementos do vetor:", soma)
+    Escreva("Média de todos os elementos do vetor:", media)
+FimAlgoritmo
